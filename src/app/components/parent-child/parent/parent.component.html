@@ -1,0 +1,15 @@
+<div style="border: 2px solid;">
+    <div style="background-color: aquamarine; margin: 10px;">
+        <!-- <h1>Parent</h1> -->
+        <h4>Parent Data: {{p3}}</h4>
+
+        <div class="outer-box">
+            <div class="inner-box child1-box" style="background-color: pink;">
+                <app-child1 [c1]="p3"></app-child1>
+            </div>
+            <div class="inner-box child2-box" style="background-color: cornflowerblue;">
+                <app-child2 (event1)="getData($event)"></app-child2>
+            </div>
+        </div>
+    </div>
+</div>

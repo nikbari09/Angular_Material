@@ -1,0 +1,16 @@
+<h1>declare an array of employee objects. display them in a table. 
+    add a search-box above the table. create a custom-pipe to filter/search employees data.</h1>
+
+<input type="text" [(ngModel)]="search_term">
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>designation</th>
+    </tr>
+    <tr *ngFor="let employee of employees | searchTerm:search_term">
+        <td>{{employee.id}}</td>
+        <td>{{employee.name}}</td>
+        <td>{{employee.designation}}</td>
+    </tr>
+</table>

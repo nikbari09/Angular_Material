@@ -1,0 +1,52 @@
+<div class="heading">Directives</div>
+
+<h1>Structural directive</h1>
+<h1>If_Else</h1>
+<div *ngIf="islog; else Else">
+    <h4>Your are logged in.</h4>
+</div>
+
+<ng-template #Else>
+    <h4>Please login.</h4>
+</ng-template>
+<hr>
+<h1>SwitchCase</h1>
+<input type="number" [(ngModel)]="switch_expression">(1-7)
+<div [ngSwitch]=switch_expression>
+    <h3 *ngSwitchCase=1>Monday</h3>
+    <h3 *ngSwitchCase=2>Tuesday</h3>
+    <h3 *ngSwitchCase=3>Wednesday</h3>
+    <h3 *ngSwitchCase=4>Thrusday</h3>
+    <h3 *ngSwitchCase=5>Friday</h3>
+    <h3 *ngSwitchCase=6>Saturday</h3>
+    <h3 *ngSwitchCase=7>Sunday</h3>
+    <h3 *ngSwitchDefault>Invalid number</h3>
+</div>
+
+<hr>
+<h1>For loop</h1>[
+<b *ngFor="let data of arr">
+    {{data}}
+</b>]
+
+<hr>
+
+<h1>Attribute Directives</h1>
+<h1>[disabled]</h1>
+<input type="text" [disabled]="isdisable">
+<hr>
+
+<h1>[hidden]</h1>
+<h4 [hidden]="ishidden">Hello this is the hidden Attribute.</h4>
+<hr>
+
+<h1>[ngStyle]</h1>
+<h4 [ngStyle]="{'color':iscolor}">This is the ngStyle Attribute.</h4>
+<hr>
+
+<h1>[ngClass]</h1>
+<div [ngClass]="{'text-uppercase':isUpperCase}">This is the ngClass attribute.</div>
+<hr>
+
+<h1>Custome Directive</h1>
+<h1 appTextHighlight>Hello from the custome Directive.</h1>

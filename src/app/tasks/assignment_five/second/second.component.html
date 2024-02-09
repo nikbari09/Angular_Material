@@ -1,0 +1,15 @@
+<h1>declare an array of employee objects. display them in a table.
+    create a custom pipe that will add 'mr. / miss.' before the employee name.</h1>
+
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Gender</th>
+    </tr>
+    <tr *ngFor="let employee of employee">
+        <td>{{employee.id}}</td>
+        <td>{{employee.name | prepipe:employee.gender}}</td>
+        <td>{{employee.gender}}</td>
+    </tr>
+</table>

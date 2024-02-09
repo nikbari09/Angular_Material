@@ -1,0 +1,60 @@
+<div class="heading">Pipes</div>
+
+<h1>customize pipe for sort array and add element in an array.</h1>
+<input type="number" #num>
+<button (click)="arr.push(+num.value)">Click me</button>
+<b *ngFor="let data of arr | mysort" >{{data}} </b>
+<hr>
+<h1>customize pipe for remaining.</h1>
+<textarea cols="30" rows="10" [(ngModel)]="msg" maxlength="100"></textarea>
+<h4>
+    Entered mmessage is :{{msg}}
+</h4>
+<h4>
+    remaining text:{{msg | remaining:100}}
+</h4>
+
+<hr>
+<h1>Build-in pipes</h1>
+<h1>uppercase</h1>
+<h4>
+{{"hello " | uppercase}}
+</h4>
+
+<h1>lowercase</h1>
+<h4>{{"heLLO" | lowercase}}</h4>
+
+<h1>titlecase</h1>
+<h4>
+    {{"hey how are you ?" | titlecase}}
+</h4>
+
+<h1>currency</h1>
+<h4>
+    {{2000 | currency}}
+</h4>
+
+<h1>date</h1>
+<h4>
+    {{today | date}}
+</h4>
+
+<h1>date:'fullDate'</h1>
+<h4>
+    {{today | date:'fullDate'}}
+</h4>
+
+<h1>date:'medium'</h1>
+<h4>
+    {{today | date:'medium'}}
+</h4>
+
+<h1>slice:0:10</h1>
+<h4>
+    {{"HEllo how are you?" | slice:0:10}}
+</h4>
+
+<h1>slice:-5</h1>
+<h4>
+    {{"hey how are you?" | slice:-5}}
+</h4>

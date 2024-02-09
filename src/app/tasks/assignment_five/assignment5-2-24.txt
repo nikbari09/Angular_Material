@@ -1,0 +1,8 @@
+Assignment - 5/2/2024
+==========
+1. Create a custom pipe(ordinal) that displays a cardinal number in ordinal format.
+2. declare an array of employee objects. display them in a table.
+   create a custom pipe that will add 'mr. / miss.' before the employee name.
+3. declare an array of employee objects. display them in a table. 
+   add a search-box above the table. create a custom-pipe to filter/search employees data.
+4.Just use all built in pipe in one example .

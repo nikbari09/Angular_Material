@@ -1,0 +1,8 @@
+.outer-box {
+    display: flex;
+  }
+  
+  .inner-box {
+    flex: 1;
+    margin: 10px;
+  }
