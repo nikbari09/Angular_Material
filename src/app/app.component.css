@@ -1,11 +1,17 @@
 .side-bar{
     background-color: #bdbdbd;
     font-style: italic;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: auto;
     
 }
 
 .main-bar{
     background-color: #e0e0e0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    /* height: auto; */
 }
 
 a{
