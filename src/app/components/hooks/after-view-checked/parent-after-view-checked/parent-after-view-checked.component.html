@@ -1,0 +1,7 @@
+<p>parent-after-view-checked works!</p>
+<input type="text" #inputp1>
+<button (click)="onbtnsubmit(inputp1)">Submit</button>
+
+<app-child-after-view-checked [c1]="p1">
+<p #temp>User has Entered following text:{{p1}}</p>
+</app-child-after-view-checked>

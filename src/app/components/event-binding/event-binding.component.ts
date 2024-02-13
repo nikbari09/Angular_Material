@@ -6,7 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./event-binding.component.css']
 })
 export class EventBindingComponent {
+  value !:string;
   onClick(){
-    console.log("Thanks for submiting.")
+    console.log("Thanks for submiting.");
+    this.value='Thanks for submitting.';
   }
 }

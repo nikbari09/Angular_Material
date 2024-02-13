@@ -1,0 +1,8 @@
+<p>parent-after-view-init works!</p>
+
+<input type="text" #inputp1>
+<button (click)="onbtnsubmit(inputp1)">Submit</button>
+
+<app-child-after-view-init [c1]="p1">
+    <p #temp>User has Entered following text:{{p1}}</p>
+</app-child-after-view-init>

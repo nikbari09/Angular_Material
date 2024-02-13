@@ -1,0 +1,10 @@
+<p>parent-ondestroy works!</p>
+
+<input type="text" #inputp1>
+<button (click)="onbtnsubmit(inputp1)">Submit</button>
+
+<app-child-ondestroy [c1]="p1" *ngIf="!toDestroy">
+    <p #temp>User has Entered following text:{{p1}}</p>
+</app-child-ondestroy>
+
+<button (click)="DestroyComponent()">Show/Hide</button>

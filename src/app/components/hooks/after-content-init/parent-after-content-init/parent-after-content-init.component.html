@@ -1,0 +1,10 @@
+<p>parent-after-content-init works!</p>
+
+<input type="string" #ref>
+<button (click)="check(ref)">Submit</button>
+
+<h2>message: {{p1}}</h2>
+
+<app-child-after-content-init [c1]="p1">
+    <p #temp>User has Entered following text:{{p1}}</p>
+</app-child-after-content-init>

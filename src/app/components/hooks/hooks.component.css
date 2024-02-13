@@ -1,0 +1,19 @@
+.heading{
+    font-size: 40px;
+    font-weight:bold;
+    text-align:center;
+    padding: 20px;
+    background-color: grey;
+}
+
+ol{
+    font-size: 17px;
+    padding-bottom: 10px;
+    
+}
+li{
+    padding-bottom: 10px;
+}
+
+
+

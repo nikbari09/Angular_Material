@@ -1,0 +1,8 @@
+<p>parent-after-content-checked works!</p>
+
+<input type="text" #inputp1>
+<button (click)="onbtnsubmit(inputp1)">Submit</button>
+
+<app-child-after-content-checked [c1]="p1">
+    <p #temp>User has Entered following text:{{p1}}</p>
+</app-child-after-content-checked>

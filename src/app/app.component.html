@@ -1,5 +1,5 @@
 <div style="display:flex;">
-  <div style="width:15%; padding: 10px; border-right: 1px solid #ccc;">
+  <div style="width:15%; padding: 10px; border-right: 1px solid #ccc;" class="side-bar">
       <h1>Topic</h1>
       <ul>
         <li><a routerLink="/interpolation" >1.Interpolation</a></li>
@@ -11,7 +11,9 @@
         <li><a routerLink="/bootstrap">7.Bootstrap</a></li>
         <li><a routerLink="/angular-material">8.Angular Material</a></li>
         <li><a routerLink="/parent">9.Parent-Child</a></li>
+        <li><a routerLink="/hooks">10.Hooks</a></li>
       </ul>
+
 
       <h1>Tasks</h1>
       <h4>Assignment 05-02-2024</h4>
@@ -32,8 +34,17 @@
         <li><a routerLink="/bootstrap">1.Bootstrap</a></li>
         <li><a routerLink="/angular-material">2.Angular Material</a></li>
       </ul>
+
+      <h4>Assignment 12-02-2024</h4>
+      <ul>
+        <li><a routerLink="/hooks">1.Hooks</a></li>
+      </ul>
+      
   </div>
-  <div style="flex:1; padding: 20px;">
+
+  
+
+  <div style="flex:1; padding: 20px;" class="main-bar">
     <router-outlet></router-outlet>
   </div>
 </div>

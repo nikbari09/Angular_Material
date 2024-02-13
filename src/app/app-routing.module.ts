@@ -14,6 +14,15 @@ import { ParentComponent } from './components/parent-child/parent/parent.compone
 import { ParentTaskComponent } from './tasks/assignment_five/Feb-07/parent-task/parent-task.component';
 import { BootstrapComponent } from './components/bootstrap/bootstrap.component';
 import { AngularMaterialComponent } from './components/angular-material/angular-material.component';
+import { HooksComponent } from './components/hooks/hooks.component';
+import { ParentOnchangeComponent } from './components/hooks/onchange/parent-onchange/parent-onchange.component';
+import { ParentOninitComponent } from './components/hooks/oninit/parent-oninit/parent-oninit.component';
+import { ParentDocheckComponent } from './components/hooks/docheck/parent-docheck/parent-docheck.component';
+import { ParentAfterContentInitComponent } from './components/hooks/after-content-init/parent-after-content-init/parent-after-content-init.component';
+import { ParentAfterContentCheckedComponent } from './components/hooks/after-content-checked/parent-after-content-checked/parent-after-content-checked.component';
+import { ParentAfterViewInitComponent } from './components/hooks/after-view-init/parent-after-view-init/parent-after-view-init.component';
+import { ParentAfterViewCheckedComponent } from './components/hooks/after-view-checked/parent-after-view-checked/parent-after-view-checked.component';
+import { ParentOndestroyComponent } from './components/hooks/ondestroy/parent-ondestroy/parent-ondestroy.component';
 
 const routes: Routes = [
   {path: "interpolation", component:InterpolationComponent},
@@ -29,11 +38,20 @@ const routes: Routes = [
   {path: "parent",component:ParentComponent},
   {path: "parent_task",component:ParentTaskComponent},
   {path: "bootstrap",component:BootstrapComponent},
-  {path: "angular-material",component:AngularMaterialComponent}
+  {path: "angular-material",component:AngularMaterialComponent},
+  {path: "hooks", component:HooksComponent},
+  {path: "parent-onchange", component:ParentOnchangeComponent},
+  {path: "parent-oninit", component:ParentOninitComponent},
+  {path: "parent-docheck", component:ParentDocheckComponent},
+  {path: "parent-after-content-init", component:ParentAfterContentInitComponent},
+  {path: "parent-after-content-checked", component:ParentAfterContentCheckedComponent},
+  {path: "parent-after-view-init", component:ParentAfterViewInitComponent},
+  {path: "parent-after-view-checked", component:ParentAfterViewCheckedComponent},
+  {path: "parent-ondestroy", component:ParentOndestroyComponent}
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

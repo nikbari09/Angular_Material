@@ -36,6 +36,23 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatCardModule} from '@angular/material/card';
 import {MatChipsModule} from '@angular/material/chips';
+import { HooksComponent } from './components/hooks/hooks.component';
+import { ChildComponent } from './components/hooks/onchange/child/child.component';
+import { ParentOnchangeComponent } from './components/hooks/onchange/parent-onchange/parent-onchange.component';
+import { ParentOninitComponent } from './components/hooks/oninit/parent-oninit/parent-oninit.component';
+import { ChildOninitComponent } from './components/hooks/oninit/child-oninit/child-oninit.component';
+import { ParentDocheckComponent } from './components/hooks/docheck/parent-docheck/parent-docheck.component';
+import { ChildDocheckComponent } from './components/hooks/docheck/child-docheck/child-docheck.component';
+import { ParentAfterContentInitComponent } from './components/hooks/after-content-init/parent-after-content-init/parent-after-content-init.component';
+import { ChildAfterContentInitComponent } from './components/hooks/after-content-init/child-after-content-init/child-after-content-init.component';
+import { ParentAfterContentCheckedComponent } from './components/hooks/after-content-checked/parent-after-content-checked/parent-after-content-checked.component';
+import { ChildAfterContentCheckedComponent } from './components/hooks/after-content-checked/child-after-content-checked/child-after-content-checked.component';
+import { ParentAfterViewInitComponent } from './components/hooks/after-view-init/parent-after-view-init/parent-after-view-init.component';
+import { ChildAfterViewInitComponent } from './components/hooks/after-view-init/child-after-view-init/child-after-view-init.component';
+import { ParentAfterViewCheckedComponent } from './components/hooks/after-view-checked/parent-after-view-checked/parent-after-view-checked.component';
+import { ChildAfterViewCheckedComponent } from './components/hooks/after-view-checked/child-after-view-checked/child-after-view-checked.component';
+import { ParentOndestroyComponent } from './components/hooks/ondestroy/parent-ondestroy/parent-ondestroy.component';
+import { ChildOndestroyComponent } from './components/hooks/ondestroy/child-ondestroy/child-ondestroy.component';
 
 @NgModule({
   declarations: [
@@ -63,7 +80,24 @@ import {MatChipsModule} from '@angular/material/chips';
     Child1TaskComponent,
     Child2TaskComponent,
     BootstrapComponent,
-    AngularMaterialComponent
+    AngularMaterialComponent,
+    HooksComponent,
+    ChildComponent,
+    ParentOnchangeComponent,
+    ParentOninitComponent,
+    ChildOninitComponent,
+    ParentDocheckComponent,
+    ChildDocheckComponent,
+    ParentAfterContentInitComponent,
+    ChildAfterContentInitComponent,
+    ParentAfterContentCheckedComponent,
+    ChildAfterContentCheckedComponent,
+    ParentAfterViewInitComponent,
+    ChildAfterViewInitComponent,
+    ParentAfterViewCheckedComponent,
+    ChildAfterViewCheckedComponent,
+    ParentOndestroyComponent,
+    ChildOndestroyComponent
   ],
   imports: [
     BrowserModule,

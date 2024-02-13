@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class TwoWayBindingComponent {
 
+  value!:string;
+
 }

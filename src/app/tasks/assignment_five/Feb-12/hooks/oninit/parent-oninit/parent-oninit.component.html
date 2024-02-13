@@ -1,0 +1,7 @@
+<p>parent-oninit works!</p>
+
+<input type="text" #ref>
+<button (click)="check(ref.value)">Submit</button>
+<h2>message: {{p1}}</h2>
+
+<app-child-oninit [c1]='p1'></app-child-oninit>

@@ -1,0 +1,8 @@
+<p>parent-docheck works!</p>
+
+<input type="string" #ref>
+<button (click)="check(ref.value)">Submit</button>
+
+<h2>message: {{p1}}</h2>
+
+<app-child-docheck [c1]="p1"></app-child-docheck>
