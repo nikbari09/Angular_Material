@@ -53,6 +53,7 @@ import { ParentAfterViewCheckedComponent } from './components/hooks/after-view-c
 import { ChildAfterViewCheckedComponent } from './components/hooks/after-view-checked/child-after-view-checked/child-after-view-checked.component';
 import { ParentOndestroyComponent } from './components/hooks/ondestroy/parent-ondestroy/parent-ondestroy.component';
 import { ChildOndestroyComponent } from './components/hooks/ondestroy/child-ondestroy/child-ondestroy.component';
+import { TemplateDrivenFormComponent } from './components/template-driven-form/template-driven-form.component';
 
 @NgModule({
   declarations: [
@@ -97,7 +98,8 @@ import { ChildOndestroyComponent } from './components/hooks/ondestroy/child-onde
     ParentAfterViewCheckedComponent,
     ChildAfterViewCheckedComponent,
     ParentOndestroyComponent,
-    ChildOndestroyComponent
+    ChildOndestroyComponent,
+    TemplateDrivenFormComponent
   ],
   imports: [
     BrowserModule,

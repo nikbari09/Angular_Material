@@ -23,6 +23,7 @@ import { ParentAfterContentCheckedComponent } from './components/hooks/after-con
 import { ParentAfterViewInitComponent } from './components/hooks/after-view-init/parent-after-view-init/parent-after-view-init.component';
 import { ParentAfterViewCheckedComponent } from './components/hooks/after-view-checked/parent-after-view-checked/parent-after-view-checked.component';
 import { ParentOndestroyComponent } from './components/hooks/ondestroy/parent-ondestroy/parent-ondestroy.component';
+import { TemplateDrivenFormComponent } from './components/template-driven-form/template-driven-form.component';
 
 const routes: Routes = [
   {path: "interpolation", component:InterpolationComponent},
@@ -47,7 +48,8 @@ const routes: Routes = [
   {path: "parent-after-content-checked", component:ParentAfterContentCheckedComponent},
   {path: "parent-after-view-init", component:ParentAfterViewInitComponent},
   {path: "parent-after-view-checked", component:ParentAfterViewCheckedComponent},
-  {path: "parent-ondestroy", component:ParentOndestroyComponent}
+  {path: "parent-ondestroy", component:ParentOndestroyComponent},
+  {path: "template-driven-form", component:TemplateDrivenFormComponent}
 ];
 
 @NgModule({
