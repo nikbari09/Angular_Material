@@ -9,7 +9,7 @@ import { EventBindingComponent } from './components/event-binding/event-binding.
 import { TwoWayBindingComponent } from './components/two-way-binding/two-way-binding.component';
 import { PipeComponent } from './components/pipe/pipe.component';
 import { RemainingPipe } from './components/pipe/customize_pipe/remaining.pipe';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MysortPipe } from './components/pipe/customize_pipe/mysort.pipe';
 import { FirstComponent } from './tasks/assignment_five/first/first.component';
 import { SecondComponent } from './tasks/assignment_five/second/second.component';
@@ -31,6 +31,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AngularMaterialComponent } from './components/angular-material/angular-material.component';
 
 import {MatIconModule} from '@angular/material/icon';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatListModule } from '@angular/material/list';
+
 import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatMenuModule} from '@angular/material/menu';
@@ -54,6 +59,8 @@ import { ChildAfterViewCheckedComponent } from './components/hooks/after-view-ch
 import { ParentOndestroyComponent } from './components/hooks/ondestroy/parent-ondestroy/parent-ondestroy.component';
 import { ChildOndestroyComponent } from './components/hooks/ondestroy/child-ondestroy/child-ondestroy.component';
 import { TemplateDrivenFormComponent } from './components/template-driven-form/template-driven-form.component';
+import { ModelDrivenFormComponent } from './components/model-driven-form/model-driven-form.component';
+import { DynamicFormComponent } from './components/dynamic-form/dynamic-form.component';
 
 @NgModule({
   declarations: [
@@ -99,7 +106,9 @@ import { TemplateDrivenFormComponent } from './components/template-driven-form/t
     ChildAfterViewCheckedComponent,
     ParentOndestroyComponent,
     ChildOndestroyComponent,
-    TemplateDrivenFormComponent
+    TemplateDrivenFormComponent,
+    ModelDrivenFormComponent,
+    DynamicFormComponent
   ],
   imports: [
     BrowserModule,
@@ -111,7 +120,12 @@ import { TemplateDrivenFormComponent } from './components/template-driven-form/t
     MatIconModule,
     MatMenuModule,
     MatCardModule,
-    MatChipsModule
+    MatChipsModule,
+    MatSidenavModule,
+    MatExpansionModule,
+    MatTooltipModule,
+    MatListModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

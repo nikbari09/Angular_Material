@@ -1,4 +1,4 @@
-.side-bar{
+/* .side-bar{
     background-color: #bdbdbd;
     font-style: italic;
     overflow-x: hidden;
@@ -12,7 +12,7 @@
     overflow-x: hidden;
     overflow-y: auto;
     /* height: auto; */
-}
+/* }
 
 a{
     color: blue;
@@ -30,5 +30,27 @@ h4{
 
 li{
     padding-bottom: 5px;
+} */
+
+/* The css for the angular sidebar and menubar.*/
+.toolbar-item-spacer {
+    flex: 1 1 auto;
 }
 
+.app-container {
+    height: 90%;
+    margin: 0;
+}  
+.app-sidenav {
+    width: 230px;
+}
+.app-sidenav-content {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+} 
+
+h4{
+    font-weight: bold;
+}
