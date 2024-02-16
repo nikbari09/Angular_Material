@@ -66,6 +66,9 @@
   </button>
   <span>Angular Training</span>
   <span class="toolbar-item-spacer"></span>
+  <button mat-icon-button matTooltip="Home" routerLink="/home">
+    <mat-icon>home</mat-icon>
+  </button>
   <button mat-icon-button matTooltip="Share">
       <mat-icon>share</mat-icon>
   </button>
@@ -152,6 +155,7 @@
   <mat-sidenav-content>
       
     <div style="flex: 2; padding: 20px;" class="main-bar">
+      
       <router-outlet></router-outlet>
     </div>
       

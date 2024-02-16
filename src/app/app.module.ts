@@ -61,6 +61,7 @@ import { ChildOndestroyComponent } from './components/hooks/ondestroy/child-onde
 import { TemplateDrivenFormComponent } from './components/template-driven-form/template-driven-form.component';
 import { ModelDrivenFormComponent } from './components/model-driven-form/model-driven-form.component';
 import { DynamicFormComponent } from './components/dynamic-form/dynamic-form.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -108,7 +109,8 @@ import { DynamicFormComponent } from './components/dynamic-form/dynamic-form.com
     ChildOndestroyComponent,
     TemplateDrivenFormComponent,
     ModelDrivenFormComponent,
-    DynamicFormComponent
+    DynamicFormComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

@@ -26,6 +26,7 @@ import { ParentOndestroyComponent } from './components/hooks/ondestroy/parent-on
 import { TemplateDrivenFormComponent } from './components/template-driven-form/template-driven-form.component';
 import { ModelDrivenFormComponent } from './components/model-driven-form/model-driven-form.component';
 import { DynamicFormComponent } from './components/dynamic-form/dynamic-form.component';
+import { HomeComponent } from './components/home/home.component';
 
 const routes: Routes = [
   {path: "interpolation", component:InterpolationComponent},
@@ -53,7 +54,8 @@ const routes: Routes = [
   {path: "parent-ondestroy", component:ParentOndestroyComponent},
   {path: "template-driven-form", component:TemplateDrivenFormComponent},
   {path: "model-driven-form", component:ModelDrivenFormComponent},
-  {path: "dynamic-form", component:DynamicFormComponent}
+  {path: "dynamic-form", component:DynamicFormComponent},
+  {path: "home", component:HomeComponent}
 ];
 
 @NgModule({
