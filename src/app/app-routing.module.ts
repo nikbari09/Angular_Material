@@ -27,6 +27,7 @@ import { TemplateDrivenFormComponent } from './components/template-driven-form/t
 import { ModelDrivenFormComponent } from './components/model-driven-form/model-driven-form.component';
 import { DynamicFormComponent } from './components/dynamic-form/dynamic-form.component';
 import { HomeComponent } from './components/home/home.component';
+import { TimeComponent } from './components/time/time.component';
 
 const routes: Routes = [
   {path: "interpolation", component:InterpolationComponent},
@@ -55,7 +56,8 @@ const routes: Routes = [
   {path: "template-driven-form", component:TemplateDrivenFormComponent},
   {path: "model-driven-form", component:ModelDrivenFormComponent},
   {path: "dynamic-form", component:DynamicFormComponent},
-  {path: "home", component:HomeComponent}
+  {path: "home", component:HomeComponent},
+  {path: "time", component:TimeComponent}
 ];
 
 @NgModule({

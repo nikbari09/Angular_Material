@@ -62,6 +62,7 @@ import { TemplateDrivenFormComponent } from './components/template-driven-form/t
 import { ModelDrivenFormComponent } from './components/model-driven-form/model-driven-form.component';
 import { DynamicFormComponent } from './components/dynamic-form/dynamic-form.component';
 import { HomeComponent } from './components/home/home.component';
+import { TimeComponent } from './components/time/time.component';
 
 @NgModule({
   declarations: [
@@ -110,7 +111,8 @@ import { HomeComponent } from './components/home/home.component';
     TemplateDrivenFormComponent,
     ModelDrivenFormComponent,
     DynamicFormComponent,
-    HomeComponent
+    HomeComponent,
+    TimeComponent
   ],
   imports: [
     BrowserModule,

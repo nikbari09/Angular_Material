@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class InterpolationComponent {
   name:string="Hello";
+
+  variable:number=10;
 }

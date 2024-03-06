@@ -6,9 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./directive.component.css']
 })
 export class DirectiveComponent {
- islog:boolean=true;
+ islog:boolean=true ;
 
- switch_expression:number=1;
+ switch_expression!:number;
 
  arr:number[]=[10,20,30,40,50,60];
 
@@ -16,7 +16,7 @@ export class DirectiveComponent {
 
  ishidden:boolean=false;
 
- ischeck:boolean=false;
+ ischeck:boolean=true;
  iscolor=this.ischeck?'red':'green';
 
  isUpperCase:boolean=true;
